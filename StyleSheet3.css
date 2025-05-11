@@ -1,0 +1,43 @@
+﻿  main {
+            padding: 2rem 0;
+        }
+
+            main h2 {
+                text-align: center;
+                margin-bottom: 1rem;
+            }
+
+            main p {
+                text-align: center;
+                margin-bottom: 1rem;
+            }
+
+        .product-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 1rem;
+            margin-top: 2rem;
+        }
+
+        .product-card {
+            background: white;
+            padding: 1rem;
+            border-radius: 5px;
+            text-align: center;
+        }
+
+            .product-card img {
+                max-width: 100%;
+                height: auto;
+            }
+
+            .product-card h3 {
+                margin: 1rem 0;
+            }
+
+        footer {
+            background-color: #1f2937;
+            color: white;
+            padding: 2rem 1rem;
+            text-align: center;
+        }

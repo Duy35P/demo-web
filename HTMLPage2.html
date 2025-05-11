@@ -1,0 +1,172 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart with Contact Information</title>
+    <link rel="stylesheet" href="StyleSheet2.css">
+    
+</head>
+<body>
+    <div class="container">
+        <h1>Shopping Cart</h1>
+
+        <div class="section">
+            <h2>Contact Information</h2>
+            <table class="contact-table">
+                <tr>
+                    <td class="field-label">First Name *</td>
+                    <td class="field-input"><input type="text" name="firstName" required></td>
+                </tr>
+                <tr>
+                    <td class="field-label">Last Name *</td>
+                    <td class="field-input"><input type="text" name="lastName" required></td>
+                </tr>
+                <tr>
+                    <td class="field-label">Email Address *</td>
+                    <td class="field-input"><input type="email" name="email" required></td>
+                </tr>
+                <tr>
+                    <td class="field-label">Phone Number</td>
+                    <td class="field-input"><input type="tel" name="phone"></td>
+                </tr>
+                <tr>
+                    <td class="field-label">Address *</td>
+                    <td class="field-input"><input type="text" name="address" required></td>
+                </tr>
+                <tr>
+                    <td class="field-label">City *</td>
+                    <td class="field-input"><input type="text" name="city" required></td>
+                </tr>
+                <tr>
+                    <td class="field-label">State/Province *</td>
+                    <td class="field-input">
+                        <select name="state" required>
+                            <option value="">Select State</option>
+                            <option value="CA">California</option>
+                            <option value="NY">New York</option>
+                            <option value="TX">Texas</option>
+                            <option value="FL">Florida</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="field-label">ZIP/Postal Code *</td>
+                    <td class="field-input"><input type="text" name="zip" required></td>
+                </tr>
+                <tr>
+                    <td class="field-label">Country *</td>
+                    <td class="field-input">
+                        <select name="country" required>
+                            <option value="US">United States</option>
+                            <option value="CA">Canada</option>
+                            <option value="UK">United Kingdom</option>
+                        </select>
+                    </td>
+                </tr>
+            </table>
+        </div>
+
+        <h2>Your Items</h2>
+        <table class="cart-table">
+            <thead>
+                <tr>
+                    <th>Product</th>
+                    <th>Price</th>
+                    <th>Quantity</th>
+                    <th>Total</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Product 1 -->
+                <tr>
+                    <td>
+                        <div style="display: flex;">
+                            <img src="ip2.PNG" alt="Wireless Headphones" class="product-img">
+                            <div class="product-info">
+                                <div class="product-name">Wireless Headphones</div>
+                                <div class="product-variant">Black</div>
+                            </div>
+                        </div>
+                    </td>
+                    <td>$59.99</td>
+                    <td>
+                        <input type="number" min="1" value="1" class="quantity-input">
+                    </td>
+                    <td>$59.99</td>
+                    <td>
+                        <button class="remove-btn">Remove</button>
+                    </td>
+                </tr>
+
+                <!-- Product 2 -->
+                <tr>
+                    <td>
+                        <div style="display: flex;">
+                            <img src="case.JFIF" alt="Smart Watch" class="product-img">
+                            <div class="product-info">
+                                <div class="product-name">Smart Watch</div>
+                                <div class="product-variant">Silver</div>
+                            </div>
+                        </div>
+                    </td>
+                    <td>$49.99</td>
+                    <td>
+                        <input type="number" min="1" value="1" class="quantity-input">
+                    </td>
+                    <td>$49.99</td>
+                    <td>
+                        <button class="remove-btn">Remove</button>
+                    </td>
+                </tr>
+
+                <!-- Product 3 -->
+                <tr>
+                    <td>
+                        <div style="display: flex;">
+                            <img src="ip1.PNG" alt="Phone Case" class="product-img">
+                            <div class="product-info">
+                                <div class="product-name">Phone Case</div>
+                                <div class="product-variant">Blue</div>
+                            </div>
+                        </div>
+                    </td>
+                    <td>$19.99</td>
+                    <td>
+                        <input type="number" min="1" value="1" class="quantity-input">
+                    </td>
+                    <td>$19.99</td>
+                    <td>
+                        <button class="remove-btn">Remove</button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+
+        <div class="cart-summary">
+            <div class="summary-row">
+                <span>Subtotal</span>
+                <span>$129.97</span>
+            </div>
+            <div class="summary-row">
+                <span>Shipping</span>
+                <span>Free</span>
+            </div>
+            <div class="summary-row">
+                <span>Tax</span>
+                <span>$9.10</span>
+            </div>
+            <div class="summary-row total">
+                <span>Total</span>
+                <span>$139.07</span>
+            </div>
+        </div>
+
+        <div class="buttons">
+            <a href="HTMLPage1.html"><button class="btn btn-continue">Continue Shopping</button></a>
+            <button class="btn btn-checkout">Complete Order</button>
+        </div>
+    </div>
+</body>
+</html>
